@@ -364,3 +364,6 @@ sortedset的常见命令：
 - zrange key min max : 按照score排序后获取指定排名范围内的元素
 - zrangebyscore key min max : 按照score排序后获取指定score范围内的元素
 - zdiff zinter zunion : 差、交、并
+
+## redis的各种语言的客户端
+https://redis.io/clients
