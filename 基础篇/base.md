@@ -367,3 +367,15 @@ sortedset的常见命令：
 
 ## redis的各种语言的客户端
 https://redis.io/clients
+
+## redis 备份
+
+### RDB
+fork 子进程进行备份  不影响进程运行
+
+### AOF
+1. 写入数据进redis,然后flushdb+shutdown服务器
+2. 新生成了dump和aof
+3. 备份新生成的aof.bak,然后删除dump/aof再看恢复
+4. 重启redis然后重新加载试试？
+5. 停止服务器,拿出我们的备份修改后再重新启动服务器看看
